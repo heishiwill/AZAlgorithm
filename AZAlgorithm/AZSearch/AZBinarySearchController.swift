@@ -47,7 +47,7 @@ class AZBinarySearchController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .white
-        self.navigationItem.title = "二分查找"
+        self.navigationItem.title = "二分查找O(log n)"
         
         self.view.addSubview(textField)
         self.view.addSubview(targetField)
