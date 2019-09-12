@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         tb.register(ControllerCell.self, forCellReuseIdentifier: ControllerCell.description())
         return tb
     }()
-    private let dataSource:[(String,[String])] = [("排序", ["选择排序"]), ("查找", ["二分查找"])]
+    private let dataSource:[(String,[String])] = [("排序", ["选择排序"]), ("查找", ["二分查找"]), ("其他", ["递归"])]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -77,6 +77,10 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 self.navigationController?.pushViewController(AZBinarySearchController(), animated: true)
+            }
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                self.navigationController?.pushViewController(AZRecursiveController(), animated: true)
             }
         }
     }
