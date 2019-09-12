@@ -14,6 +14,7 @@
 		2B5C23232328F55D00CC80F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C23212328F55D00CC80F5 /* LaunchScreen.storyboard */; };
 		2B5C232E2328F55D00CC80F5 /* AZAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C232D2328F55D00CC80F5 /* AZAlgorithmTests.swift */; };
 		2B5C23392328F55D00CC80F5 /* AZAlgorithmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C23382328F55D00CC80F5 /* AZAlgorithmUITests.swift */; };
+		2B5C23492328FD8600CC80F5 /* AZBinarySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C23482328FD8600CC80F5 /* AZBinarySearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2B5C23342328F55D00CC80F5 /* AZAlgorithmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZAlgorithmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5C23382328F55D00CC80F5 /* AZAlgorithmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZAlgorithmUITests.swift; sourceTree = "<group>"; };
 		2B5C233A2328F55D00CC80F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5C23482328FD8600CC80F5 /* AZBinarySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZBinarySearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,8 @@
 		2B5C23172328F55C00CC80F5 /* AZAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				2B5C23472328FD5900CC80F5 /* AZSort */,
+				2B5C23462328FD4200CC80F5 /* AZSearch */,
 				2B5C23182328F55C00CC80F5 /* AppDelegate.swift */,
 				2B5C231A2328F55C00CC80F5 /* ViewController.swift */,
 				2B5C231C2328F55C00CC80F5 /* Main.storyboard */,
@@ -123,6 +127,21 @@
 				2B5C233A2328F55D00CC80F5 /* Info.plist */,
 			);
 			path = AZAlgorithmUITests;
+			sourceTree = "<group>";
+		};
+		2B5C23462328FD4200CC80F5 /* AZSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2B5C23482328FD8600CC80F5 /* AZBinarySearchController.swift */,
+			);
+			path = AZSearch;
+			sourceTree = "<group>";
+		};
+		2B5C23472328FD5900CC80F5 /* AZSort */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AZSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5C23492328FD8600CC80F5 /* AZBinarySearchController.swift in Sources */,
 				2B5C231B2328F55C00CC80F5 /* ViewController.swift in Sources */,
 				2B5C23192328F55C00CC80F5 /* AppDelegate.swift in Sources */,
 			);
